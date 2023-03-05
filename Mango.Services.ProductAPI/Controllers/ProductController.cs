@@ -78,6 +78,8 @@ namespace Mango.Services.ProductAPI.Controllers
         }
 
         [HttpPut]
+        [Route("{id}")]
+
         public async Task<object> Put([FromBody] ProductDto productDto)
         {
             try
@@ -99,6 +101,8 @@ namespace Mango.Services.ProductAPI.Controllers
         }
 
         [HttpDelete]
+        [Route("{id}")]
+
         public async Task<object> Delete(int id)
         {
             try
